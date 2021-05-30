@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        #git:
+          #uri: file:///${user.home}/projects/springmicroservices/configs
+          #uri: https://github.com/krishanucloud/springmicroservices/tree/master/configs
+          #skipSslValidation: true
+        native:
+          searchLocations: file:///${user.home}/projects/springmicroservices/configs
+      fail:
+        fast: true
